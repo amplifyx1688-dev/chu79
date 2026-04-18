@@ -1,0 +1,75 @@
+{
+  "global_settings": {
+    "auto_delete_delay": 300,
+    "night_mode_start": "22:00",
+    "night_mode_end": "06:00",
+    "admin_user_ids": []
+  },
+  "topics": [
+    {
+      "id": 1,
+      "name": "General Discussion",
+      "link": "https://t.me/group/1",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": false,
+      "auto_delete_seconds": 3600,
+      "night_mode": false,
+      "advertising_mode": false,
+      "scheduled_activation": null,
+      "default_message_text": null,
+      "default_message_image": null,
+      "buttons": [
+        {
+          "text": "View Rules",
+          "url": "https://t.me/group/rules",
+          "callback_data": null,
+          "color": "primary"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Announcements",
+      "link": "https://t.me/group/2",
+      "enabled": true,
+      "standard_auto_delete": false,
+      "force_auto_delete": false,
+      "auto_delete_seconds": 0,
+      "night_mode": false,
+      "advertising_mode": false,
+      "scheduled_activation": null,
+      "default_message_text": null,
+      "default_message_image": null,
+      "buttons": []
+    },
+    {
+      "id": 3,
+      "name": "Support",
+      "link": "https://t.me/group/3",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": true,
+      "auto_delete_seconds": 1800,
+      "night_mode": true,
+      "advertising_mode": false,
+      "scheduled_activation": null,
+      "default_message_text": "Please describe your issue clearly.",
+      "default_message_image": null,
+      "buttons": [
+        {
+          "text": "Submit Ticket",
+          "url": null,
+          "callback_data": "create_ticket",
+          "color": "success"
+        },
+        {
+          "text": "FAQ",
+          "url": "https://example.com/faq",
+          "callback_data": null,
+          "color": "secondary"
+        }
+      ]
+    }
+  ]
+}
