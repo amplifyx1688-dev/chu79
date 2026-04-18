@@ -1,71 +1,287 @@
 {
   "global_settings": {
-    "auto_delete_delay": 300,
-    "night_mode_start": "22:00",
-    "night_mode_end": "06:00",
-    "admin_user_ids": []
+    "night_mode_start": "00:00",
+    "night_mode_end": "07:00",
+    "admin_user_ids": [8626593284],
+    "main_group_id": -1001234567890,
+    "auto_cleanup_service_messages": true
   },
   "topics": [
     {
-      "id": 1,
-      "name": "General Discussion",
-      "link": "https://t.me/group/1",
+      "id": 3096,
+      "name": "聊天版",
+      "link": "https://t.me/ChuNine79/3096",
       "enabled": true,
       "standard_auto_delete": true,
       "force_auto_delete": false,
-      "auto_delete_seconds": 3600,
-      "night_mode": false,
-      "advertising_mode": false,
-      "scheduled_activation": null,
-      "default_message_text": null,
-      "default_message_image": null,
+      "auto_delete_seconds": 14400,
+      "night_mode": true,
+      "advertising_mode": true,
+      "advertising_interval_minutes": 240,
+      "scheduled_activation": "07:15",
+      "default_message_text": "1️⃣ 關注官方主帳：初玖科技 🔰官方頻道\n2️⃣ 啟管理機器人：初玖科技 🔰群管 ☻\n3️⃣ 回到本話題，權限將於系統驗證後自動解鎖\n\n🚫 聊天版塊嚴禁事項：\n• 嚴禁未經許可的私發廣告或導流連結。\n• 涉及詐騙、造謠或惡意攻擊者，直接封禁。\n• ☻ 轉帳交易請務必先與主帳 8626593284 通話確認，切勿私下匯款。\n\n✨ 社群導航提示：\n• 獲取積分請至：📅 簽到版\n• 獲取最新消息：📰 事件版\n━━━━━━━━━━━━━━\n⚠️ 資訊繁雜，請自行甄別內容真偽！",
+      "default_message_image": "Files/image.png",
       "buttons": [
         {
-          "text": "View Rules",
-          "url": "https://t.me/group/rules",
+          "text": "🧸 聯絡尤娜",
+          "url": "https://t.me/Uan417",
           "callback_data": null,
           "color": "primary"
+        },
+        {
+          "text": "📞 聯繫版主",
+          "url": "https://t.me/Nine_999BoT",
+          "callback_data": null,
+          "color": "success"
+        },
+        {
+          "text": "📆 今日簽到",
+          "url": "https://t.me/ChuNine79/2446",
+          "callback_data": null,
+          "color": "secondary"
         }
       ]
     },
     {
-      "id": 2,
-      "name": "Announcements",
-      "link": "https://t.me/group/2",
-      "enabled": true,
-      "standard_auto_delete": false,
-      "force_auto_delete": false,
-      "auto_delete_seconds": 0,
-      "night_mode": false,
-      "advertising_mode": false,
-      "scheduled_activation": null,
-      "default_message_text": null,
-      "default_message_image": null,
-      "buttons": []
-    },
-    {
-      "id": 3,
-      "name": "Support",
-      "link": "https://t.me/group/3",
+      "id": 2446,
+      "name": "簽到版",
+      "link": "https://t.me/ChuNine79/2446",
       "enabled": true,
       "standard_auto_delete": true,
       "force_auto_delete": true,
-      "auto_delete_seconds": 1800,
+      "auto_delete_seconds": 14400,
       "night_mode": true,
-      "advertising_mode": false,
-      "scheduled_activation": null,
-      "default_message_text": "Please describe your issue clearly.",
-      "default_message_image": null,
+      "advertising_mode": true,
+      "advertising_interval_minutes": 240,
+      "scheduled_activation": "07:00",
+      "default_message_text": "🌟 每日簽到，好禮轉不停！\n\n每日登入領點數，連續簽到積分多更多\n每滿 20 積分，即可轉動輪盤乙次\n\n⚠️ 斷簽歸零：記得天天來，中斷一天積分重算\n👇 點擊底部按鈕即可簽到",
+      "default_message_image": "Files/image 2.png",
       "buttons": [
         {
-          "text": "Submit Ticket",
+          "text": "📆 今日簽到",
           "url": null,
-          "callback_data": "create_ticket",
+          "callback_data": "checkin",
+          "color": "primary"
+        },
+        {
+          "text": "🎲 幸運輪盤",
+          "url": "https://sunexdmoe.com/",
+          "callback_data": null,
           "color": "success"
         },
         {
-          "text": "FAQ",
-          "url": "https://example.com/faq",
+          "text": "👤 個人詳情",
+          "url": null,
+          "callback_data": "profile",
+          "color": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 2445,
+      "name": "事件版",
+      "link": "https://t.me/ChuNine79/2445",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": true,
+      "auto_delete_seconds": 0,
+      "night_mode": true,
+      "advertising_mode": false,
+      "republish_mode": true,
+      "scheduled_activation": null,
+      "default_message_text": "🚧 東南亞事件情報站\n\n🔥 即時追蹤東南亞各類事件動態\n📊 每日更新數據統計與趨勢分析\n⚠️ 情報僅供參考，請自行判斷真偽\n\n👇 點擊底部按鈕查閱詳情",
+      "default_message_image": "Files/image 3.png",
+      "buttons": [
+        {
+          "text": "📰 大小事報",
+          "url": null,
+          "callback_data": "news_report",
+          "color": "primary"
+        },
+        {
+          "text": "📊 娛樂快報",
+          "url": null,
+          "callback_data": "casino_report",
+          "color": "success"
+        },
+        {
+          "text": "📝 我要投稿",
+          "url": "https://t.me/Nine_999BoT",
+          "callback_data": null,
+          "color": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 2461,
+      "name": "🔰₇₉ 兌匯",
+      "link": "https://t.me/ChuNine79/2461",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": true,
+      "auto_delete_seconds": 21600,
+      "night_mode": true,
+      "advertising_mode": true,
+      "advertising_interval_minutes": 360,
+      "scheduled_activation": "07:30",
+      "default_message_text": "🔰 初玖₇₉ 兌匯服務\n\n💱 即時匯率｜低手續費｜快速到帳\n🌐 支援多國貨幣與加密貨幣兌換\n🔒 安全交易｜專業客服｜24H 服務\n\n👇 點擊底部按鈕查詢匯率或兌換",
+      "default_message_image": "Files/image 4.png",
+      "buttons": [
+        {
+          "text": "💱 服務通道",
+          "url": null,
+          "callback_data": "exchange_channels",
+          "color": "primary"
+        },
+        {
+          "text": "👛 我要兌匯",
+          "url": null,
+          "callback_data": "exchange_order",
+          "color": "success"
+        },
+        {
+          "text": "📝 歷史訂單",
+          "url": "https://t.me/Nine_999BoT",
+          "callback_data": null,
+          "color": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 2486,
+      "name": "🔰₇₉ 編程",
+      "link": "https://t.me/ChuNine79/2486",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": true,
+      "auto_delete_seconds": 21600,
+      "night_mode": true,
+      "advertising_mode": true,
+      "advertising_interval_minutes": 360,
+      "scheduled_activation": "11:00",
+      "default_message_text": "🔰 初玖₇₉ 編程服務\n\n💻 網站開發｜APP 製作｜自動化腳本\n🤖 Telegram 機器人｜數據分析工具\n⚡️ 快速交付｜品質保證｜售後支援\n\n👇 點擊底部按鈕開始諮詢",
+      "default_message_image": "Files/image 5.png",
+      "buttons": [
+        {
+          "text": "📝 展示作品",
+          "url": null,
+          "callback_data": "dev_portfolio",
+          "color": "primary"
+        },
+        {
+          "text": "💬 技術諮詢",
+          "url": "https://t.me/ChuNine769",
+          "callback_data": null,
+          "color": "success"
+        },
+        {
+          "text": "👤 歷史訂單",
+          "url": "https://t.me/Nine_999BoT",
+          "callback_data": null,
+          "color": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 2463,
+      "name": "🧸⁷⁷ 美工",
+      "link": "https://t.me/ChuNine79/2463",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": true,
+      "auto_delete_seconds": 21600,
+      "night_mode": true,
+      "advertising_mode": true,
+      "advertising_interval_minutes": 360,
+      "scheduled_activation": "08:00",
+      "default_message_text": "🧸 優娜⁷⁷ 美工服務\n\n🎨 頭像設計｜封面製作｜海報設計\n🖼️ 動圖製作｜介面設計｜LOGO 設計\n\n👇 點擊底部按鈕開始諮詢",
+      "default_message_image": "Files/image 6.png",
+      "buttons": [
+        {
+          "text": "📝 展示作品",
+          "url": null,
+          "callback_data": "design_portfolio",
+          "color": "primary"
+        },
+        {
+          "text": "💬 技術諮詢",
+          "url": "https://t.me/ChuNine769",
+          "callback_data": null,
+          "color": "success"
+        },
+        {
+          "text": "👤 歷史訂單",
+          "url": "https://t.me/Nine_999BoT",
+          "callback_data": null,
+          "color": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 2472,
+      "name": "🧸⁷⁷ 驗證",
+      "link": "https://t.me/ChuNine79/2472",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": true,
+      "auto_delete_seconds": 21600,
+      "night_mode": true,
+      "advertising_mode": true,
+      "advertising_interval_minutes": 360,
+      "scheduled_activation": "09:00",
+      "default_message_text": "🧸 優娜⁷⁷ 帳號驗證\n\n🛡️ 專業帳號安全檢測服務\n🔍 風險評估｜真偽驗證｜背景調查\n✅ 交易前必驗，降低被騙風險\n\n👇 點擊底部按鈕提交驗證需求",
+      "default_message_image": "Files/image 8.png",
+      "buttons": [
+        {
+          "text": "📝 产品列表",
+          "url": null,
+          "callback_data": "verify_products",
+          "color": "primary"
+        },
+        {
+          "text": "💬 我要购买",
+          "url": "https://t.me/ChuNine769",
+          "callback_data": null,
+          "color": "success"
+        },
+        {
+          "text": "👤 歷史訂單",
+          "url": "https://t.me/Nine_999BoT",
+          "callback_data": null,
+          "color": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 2473,
+      "name": "🧸⁷⁷ 招聘",
+      "link": "https://t.me/ChuNine79/2473",
+      "enabled": true,
+      "standard_auto_delete": true,
+      "force_auto_delete": true,
+      "auto_delete_seconds": 21600,
+      "night_mode": true,
+      "advertising_mode": true,
+      "advertising_interval_minutes": 360,
+      "scheduled_activation": "10:00",
+      "default_message_text": "🧸 優娜⁷⁷ 人才招聘\n\n📋 免費刊登職缺｜人才媒合服務\n🔍 協助篩選履歷｜面試安排\n\n👇 點擊底部按鈕開始使用",
+      "default_message_image": "Files/image 7.png",
+      "buttons": [
+        {
+          "text": "📝 目前職缺",
+          "url": null,
+          "callback_data": "jobs_list",
+          "color": "primary"
+        },
+        {
+          "text": "🔍 我要招募",
+          "url": "https://t.me/ChuNine769",
+          "callback_data": null,
+          "color": "success"
+        },
+        {
+          "text": "👀 臨時要人",
+          "url": "https://t.me/Nine_999BoT",
           "callback_data": null,
           "color": "secondary"
         }
